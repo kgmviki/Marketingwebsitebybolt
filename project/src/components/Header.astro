@@ -1,0 +1,117 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<header class="header">
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="/">
+            <span class="logo-text">Digital<span class="text-gradient">Pro</span></span>
+          </a>
+        </div>
+        
+        <div class="nav-links">
+          <a href="/" class={currentPath === '/' ? 'nav-link active' : 'nav-link'}>Home</a>
+          <a href="/services" class={currentPath === '/services' ? 'nav-link active' : 'nav-link'}>Services</a>
+          <a href="/about" class={currentPath === '/about' ? 'nav-link active' : 'nav-link'}>About</a>
+          <a href="/contact" class={currentPath === '/contact' ? 'nav-link active' : 'nav-link'}>Contact</a>
+        </div>
+        
+        <div class="nav-cta">
+          <a href="/contact" class="btn btn-primary">Get Started</a>
+        </div>
+        
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: #667eea;
+  }
+  
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 1px;
+  }
+  
+  .mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
+  
+  .mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #1f2937;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links,
+    .nav-cta {
+      display: none;
+    }
+    
+    .mobile-menu-toggle {
+      display: flex;
+    }
+  }
+</style>

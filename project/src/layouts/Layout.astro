@@ -1,0 +1,102 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Professional freelance digital marketer specializing in Meta ads and AI-powered marketing solutions." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html {
+        font-family: 'Inter', system-ui, sans-serif;
+        scroll-behavior: smooth;
+      }
+      
+      body {
+        line-height: 1.6;
+        color: #1f2937;
+        background: #ffffff;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+      
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+      
+      .btn-primary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+      
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+      }
+      
+      .btn-secondary {
+        background: transparent;
+        color: #667eea;
+        border: 2px solid #667eea;
+      }
+      
+      .btn-secondary:hover {
+        background: #667eea;
+        color: white;
+      }
+      
+      .section-padding {
+        padding: 5rem 0;
+      }
+      
+      .text-gradient {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      @media (max-width: 768px) {
+        .section-padding {
+          padding: 3rem 0;
+        }
+        
+        .container {
+          padding: 0 1rem;
+        }
+      }
+    </style>
+  </body>
+</html>

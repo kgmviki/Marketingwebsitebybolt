@@ -1,0 +1,617 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Contact Me | Get Your Free Marketing Consultation">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="contact-hero section-padding">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Let's <span class="text-gradient">Grow Your Business</span> Together
+          </h1>
+          <p class="hero-description">
+            Ready to take your digital marketing to the next level? Get in touch for a free consultation and let's discuss how I can help you achieve your goals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding">
+      <div class="container">
+        <div class="contact-content">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <div class="form-header">
+              <h2 class="form-title">Get Your Free Consultation</h2>
+              <p class="form-description">
+                Fill out the form below and I'll get back to you within 24 hours with a personalized strategy for your business.
+              </p>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company">
+              </div>
+              
+              <div class="form-group">
+                <label for="website">Website URL</label>
+                <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
+              </div>
+              
+              <div class="form-group">
+                <label for="budget">Monthly Marketing Budget</label>
+                <select id="budget" name="budget">
+                  <option value="">Select your budget range</option>
+                  <option value="under-1000">Under $1,000</option>
+                  <option value="1000-5000">$1,000 - $5,000</option>
+                  <option value="5000-10000">$5,000 - $10,000</option>
+                  <option value="10000-25000">$10,000 - $25,000</option>
+                  <option value="25000-plus">$25,000+</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="services">Services Interested In</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="meta-ads">
+                    <span class="checkmark"></span>
+                    Meta Ads Management
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="ai-tools">
+                    <span class="checkmark"></span>
+                    AI Marketing Tools
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="optimization">
+                    <span class="checkmark"></span>
+                    Campaign Optimization
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="analytics">
+                    <span class="checkmark"></span>
+                    Analytics & Reporting
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="strategy">
+                    <span class="checkmark"></span>
+                    Strategy Consultation
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="done-for-you">
+                    <span class="checkmark"></span>
+                    Done-For-You Packages
+                  </label>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Tell Me About Your Business & Goals *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your business, current marketing challenges, and what you'd like to achieve..." required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="timeline">When Would You Like to Start?</label>
+                <select id="timeline" name="timeline">
+                  <option value="">Select timeline</option>
+                  <option value="immediately">Immediately</option>
+                  <option value="within-month">Within a month</option>
+                  <option value="1-3-months">1-3 months</option>
+                  <option value="3-6-months">3-6 months</option>
+                  <option value="just-exploring">Just exploring options</option>
+                </select>
+              </div>
+              
+              <button type="submit" class="btn btn-primary submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading" style="display: none;">Sending...</span>
+              </button>
+            </form>
+          </div>
+          
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="info-card">
+              <h3 class="info-title">Get In Touch</h3>
+              <div class="info-items">
+                <div class="info-item">
+                  <div class="info-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <span class="info-label">Email</span>
+                    <span class="info-value">hello@digitalpro.com</span>
+                  </div>
+                </div>
+                
+                <div class="info-item">
+                  <div class="info-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <span class="info-label">Phone</span>
+                    <span class="info-value">+1 (555) 123-4567</span>
+                  </div>
+                </div>
+                
+                <div class="info-item">
+                  <div class="info-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <span class="info-label">Response Time</span>
+                    <span class="info-value">Within 24 hours</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <h3 class="info-title">What Happens Next?</h3>
+              <div class="process-steps">
+                <div class="process-step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h4>Initial Review</h4>
+                    <p>I'll review your submission and research your business</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h4>Strategy Call</h4>
+                    <p>We'll schedule a 30-minute consultation call</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h4>Custom Proposal</h4>
+                    <p>You'll receive a tailored marketing strategy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <h3 class="info-title">Follow Me</h3>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-description">
+            Common questions about working with me
+          </p>
+        </div>
+        
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3 class="faq-question">How quickly can we get started?</h3>
+            <p class="faq-answer">
+              After our initial consultation and agreement on strategy, I can typically begin work within 1-2 weeks. For urgent projects, I may be able to start sooner.
+            </p>
+          </div>
+          
+          <div class="faq-item">
+            <h3 class="faq-question">Do you work with businesses in my industry?</h3>
+            <p class="faq-answer">
+              I work with businesses across various industries including e-commerce, SaaS, professional services, healthcare, and more. My strategies are adaptable to different business models.
+            </p>
+          </div>
+          
+          <div class="faq-item">
+            <h3 class="faq-question">What's included in your reporting?</h3>
+            <p class="faq-answer">
+              You'll receive detailed monthly reports covering campaign performance, ROI analysis, key metrics, insights, and recommendations for optimization.
+            </p>
+          </div>
+          
+          <div class="faq-item">
+            <h3 class="faq-question">Do you require long-term contracts?</h3>
+            <p class="faq-answer">
+              I typically work on month-to-month agreements after an initial 3-month commitment. This ensures we have enough time to see results while maintaining flexibility.
+            </p>
+          </div>
+          
+          <div class="faq-item">
+            <h3 class="faq-question">How do you measure success?</h3>
+            <p class="faq-answer">
+              Success is measured based on your specific goals - whether that's increased revenue, lead generation, brand awareness, or other KPIs we define together.
+            </p>
+          </div>
+          
+          <div class="faq-item">
+            <h3 class="faq-question">What makes you different from agencies?</h3>
+            <p class="faq-answer">
+              As a freelancer, you get direct access to me, personalized attention, faster communication, and often better value. I'm personally invested in your success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<style>
+  .contact-hero {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    padding-top: 120px;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .hero-description {
+    font-size: 1.25rem;
+    color: #6b7280;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .contact-section {
+    background: white;
+  }
+  
+  .contact-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+  
+  .form-header {
+    margin-bottom: 2rem;
+  }
+  
+  .form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .form-description {
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #374151;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  }
+  
+  .checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: normal;
+  }
+  
+  .checkbox-label input[type="checkbox"] {
+    margin: 0;
+    width: auto;
+  }
+  
+  .submit-btn {
+    margin-top: 1rem;
+    position: relative;
+  }
+  
+  .btn-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .info-card {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .info-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #667eea;
+    color: white;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .info-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .info-value {
+    font-weight: 500;
+    color: #1f2937;
+  }
+  
+  .process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #667eea;
+    color: white;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+  }
+  
+  .step-content h4 {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .step-content p {
+    color: #6b7280;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #667eea;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .social-link:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+  }
+  
+  .faq-section {
+    background: #f8fafc;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+  
+  .faq-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .faq-question {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+  
+  .faq-answer {
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+    .contact-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+    
+    .checkbox-group {
+      grid-template-columns: 1fr;
+    }
+    
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    const submitBtn = form.querySelector('.submit-btn');
+    const btnText = submitBtn.querySelector('.btn-text');
+    const btnLoading = submitBtn.querySelector('.btn-loading');
+    
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Show loading state
+      btnText.style.display = 'none';
+      btnLoading.style.display = 'inline';
+      submitBtn.disabled = true;
+      
+      // Simulate form submission (replace with actual form handling)
+      setTimeout(() => {
+        alert('Thank you for your message! I\'ll get back to you within 24 hours.');
+        form.reset();
+        
+        // Reset button state
+        btnText.style.display = 'inline';
+        btnLoading.style.display = 'none';
+        submitBtn.disabled = false;
+      }, 2000);
+    });
+  });
+</script>
